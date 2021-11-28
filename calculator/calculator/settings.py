@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+STATICFILES_DIRS = ['C:/Users/Maycol/Desktop/equipo/calculator/calculator/web/static']
 
 # Application definition
 
@@ -54,7 +55,7 @@ ROOT_URLCONF = 'calculator.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['C:/Users/Maycol/Desktop/equipo/calculator/calculator/web/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
