@@ -172,7 +172,7 @@ main > .main-container {
   background-color: #ffff;
 }
 
-/* ------------- input ------------ */
+/* ------------- inputs de abajo ------------ */
 
 .main-container .app .input {
   width: 100%;
@@ -183,10 +183,14 @@ main > .main-container {
 
 .main-container .app .input .components {
   width: 100%;
-  height: 60px;
+  height: 60px; 
+  margin-top: 20px;
+}
+.components form {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
 }
 
 .main-container .app .input .components input {
