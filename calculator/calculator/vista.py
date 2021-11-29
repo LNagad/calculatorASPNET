@@ -7,7 +7,9 @@ def index(request):
     data= request.POST.get("input_solved")
     if data == None:
         data = ''
+
     data = bobito(data)
+    
     # print(data)
     # print(type(data))
     return render (request, 'index.html',{'data':data})
