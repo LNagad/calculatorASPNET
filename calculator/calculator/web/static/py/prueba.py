@@ -25,7 +25,7 @@ data = {
     "cursos": ["PHP", "Python", "JavaScript", "C#", "Node.js"]
 }
 
-json_data = json.dumps(data)
+# json_data = json.dumps(data)
 # print(json_data)
 # print(type(json_data))
 

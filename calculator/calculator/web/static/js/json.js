@@ -8,7 +8,6 @@ function readJson() {
     // return resultado
 }
 
-
 // -------------- writing and creating a json file
 function writeJson(operacion) {
     const fs = require('fs')
@@ -18,7 +17,7 @@ function writeJson(operacion) {
         resultado: 300
     }
     // ---------------- convert dict to json
-    
+
     // const jsonString = JSON.stringify(newObject);
     // console.log(jsonString)
 
@@ -31,5 +30,4 @@ function writeJson(operacion) {
     })
 }
 
-
-writeJson()
+readJson()
