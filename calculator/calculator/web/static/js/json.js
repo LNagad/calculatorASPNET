@@ -1,3 +1,5 @@
+
+ 
 // ----------- reading the json
 function readJson() {
     const data = require('./data.json')
@@ -11,15 +13,12 @@ function readJson() {
 // -------------- writing and creating a json file
 function writeJson(operacion) {
     const fs = require('fs')
-
+    
     const calculateJson = {
-        calculo: '150+150',
-        resultado: 300
+        calculo: operacion,
+        resultado: ''
     }
     // ---------------- convert dict to json
-
-    // const jsonString = JSON.stringify(newObject);
-    // console.log(jsonString)
 
     fs.writeFile('./data2.json', JSON.stringify(calculateJson, null, 2), err => {
         if (err) {
@@ -30,4 +29,13 @@ function writeJson(operacion) {
     })
 }
 
-readJson()
+function hacerOperacion(){
+    const operacion = document.getElementById('FunctionForm').value
+    // console.log(typeof(operacion))
+    // console.log(operacion)
+
+    writeJson(operacion)
+   
+}
+
+

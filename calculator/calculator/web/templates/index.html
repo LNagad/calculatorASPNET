@@ -76,17 +76,16 @@
           <div class="components">
             <!-- function that make the calculus -->
 
-            <form action="/buscar/" method="GET">
 
-              <input type="text" name="input_solved" id="FunctionForm" placeholder="Ingresa un problema" readonly />
+              <input type="text" name="input_solved" id="FunctionForm" placeholder="Ingresa un problema"  readonly />
               <!--------- the button is disabled to make it easier ----->
 
               <!-- <input type="submit" value="Buscar"> -->
 
-              <button type="submit" onclick="">
+              <button type="submit" onclick="hacerOperacion()">
                 Ir
               </button>
-            </form>
+
 
             <div id="display"></div>
           </div>
@@ -95,8 +94,9 @@
     </section>
   </main>
   <!----------------- front end scripts -->
-
+  
   <script src={% static 'js/index.js' %}></script>
+  <script src={% static 'js/json.js' %}></script>
 </body>
 
 </html>

@@ -1,7 +1,22 @@
 
+  let operacion = document.getElementById('FunctionForm').value
+
+ 
+
+
+
+
+
+
+
+
  let inputDisplay = document.getElementById('FunctionForm');
 
  let buttons = Array.from(document.getElementsByClassName('button'));
+
+
+
+
 
  function check(e) {
    if (e == '√☐') {
@@ -21,6 +36,9 @@
      return e;
    }
  }
+
+
+}
 
  buttons.map(button => {
 
