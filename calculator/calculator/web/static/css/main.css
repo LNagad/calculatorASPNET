@@ -234,3 +234,7 @@ input:focus::-webkit-input-placeholder {
   background-color: #ff2246;
   cursor: pointer;
 }
+
+.components .display {
+  border: 1px solid #000;
+}

@@ -35,7 +35,9 @@ function hacerOperacion(){
     // console.log(operacion)
 
     writeJson(operacion)
-   
 }
+
+
+
 
 
