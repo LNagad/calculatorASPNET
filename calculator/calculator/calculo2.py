@@ -5,7 +5,7 @@ init_printing()
 x = symbols("x")
 e = symbols("e")
 pi = symbols("π")
-f = 3*x*pi
+f = log(5*x**2)
 
 
 # for i in range(len(f)):
