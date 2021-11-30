@@ -3,7 +3,14 @@ init_printing()
 
         # fun = '6x'
 x = symbols("x")
-f = 5*x-2*x
+e = symbols("e")
+
+f = 23x**2*e
+
+
+# for i in range(len(f)):
+#         if "x**" in f[i]:
+
 
 print(integrate(f, x))
     

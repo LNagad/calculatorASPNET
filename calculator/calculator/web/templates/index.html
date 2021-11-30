@@ -56,9 +56,9 @@
           <li><a class="button" href="#">/</a></li>
           <li><a class="button" href="#">*</a></li>
           <li><a class="button" href="#">x</a></li>
-          <li><a class="button" href="#">y</a></li>
-          <li><a class="button" href="#">ln</a></li>
-          <li><a class="button" href="#">√☐</a></li>
+          <li><a class="button" href="#"></a></li>
+          <li><a class="button" href="#"></a></li>
+          <li><a class="button" href="#">sqrt()</a></li>
           <li><a class="button" href="#">x^2</a></li>
           <li><a class="button" href="#">e</a></li>
           <li><a class="button" href="#"></a></li>
@@ -78,7 +78,7 @@
 
             <form  method="post">
               {% csrf_token %}
-              <input type="text" name="input_solved" id="FunctionForm" placeholder="Ingresa un problema"  readonly />
+              <input type="text" name="input_solved" id="FunctionForm" placeholder="Ingresa un problema"  />
               <!--------- the button is disabled to make it easier ----->
 
               <!-- <input type="submit" value="Buscar"> -->
@@ -88,7 +88,7 @@
           </form>
           </div>
         </div>
-        <div id="display"><h2>resultado: {{data}}</h2></div>
+        <div id="display"><h2>resultado:</h2><h2 class="resultado"  id="resultado" >{{data}} {{const}}</h2></div>
       </section>
     </section>
   </main>

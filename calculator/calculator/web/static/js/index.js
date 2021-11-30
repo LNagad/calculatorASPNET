@@ -43,15 +43,23 @@
          value = value.substring(0, value.length - 1);
          inputDisplay.value = value;
 
-         // then do the process of elevation and so on
-         valueX = valueX.substr(-1);
-         valueX = parseInt(valueX);
+        //  // then do the process of elevation and so on
+        //  valueX = valueX.substr(-1);
+        //  valueX = parseInt(valueX);
 
-         inputDisplay.value += (valueX * valueX);
+        //  inputDisplay.value += (valueX * valueX);
+
+        // @last Change: i remove the preview features to adapt it to python
+        inputDisplay.value = valueX+'**'
          break;
 
        case 'C':
+         
+
+         
+
          inputDisplay.value = '';
+         document.getElementById('resultado').innerText = '' 
          break;
        case '←':
          value = inputDisplay.value;
