@@ -92,7 +92,7 @@ main > .main-container {
   text-decoration: none;
   color: #808080;
   text-align: center;
-  font-family: "Ubuntu", sans-serif;
+  /* font-family: "Ubuntu", sans-serif; */
   font-weight: bold;
   width: 100%;
   height: 100%;
@@ -196,7 +196,7 @@ main > .main-container {
 .main-container .app .input .components input {
   width: 85%;
   height: 100%;
-  font-family: "Ubuntu", sans-serif;
+  /* font-family: "Ubuntu", sans-serif; */
   padding: 10px 0 5px 10px;
   font-style: italic;
   font-size: 24px;
@@ -225,7 +225,7 @@ input:focus::-webkit-input-placeholder {
   border-radius: 10px;
   text-align: center;
   text-decoration: none;
-  font-family: "Ubuntu", sans-serif;
+  /* font-family: "Ubuntu", sans-serif; */
   font-weight: bold;
   font-size: 18px;
 }

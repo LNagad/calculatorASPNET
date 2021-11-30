@@ -7,13 +7,17 @@ def bobito(fun):
         # fun = '6x'
         x = symbols("x")
         e = symbols("e")
+        pi = symbols("π")
 
         f = fun
         # f = fun.strip('"')
 
 
-        
-        f = f.replace('x', '*x')
+        if f[0] != 'x':
+            f = f.replace('x', '*x')
+        else:
+            pass            
+
 
         for i in range(len(f)):
             if "x**" in f:
@@ -23,6 +27,10 @@ def bobito(fun):
         for i in range(len(f)):
             if "e" in f[i]:
                 f = f.replace('e', '*e')
+
+        for i in range(len(f)):
+            if "π" in f[i]:
+                f = f.replace('π', '*π')
                     
         
 
