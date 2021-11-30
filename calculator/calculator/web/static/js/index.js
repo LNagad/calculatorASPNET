@@ -1,75 +1,60 @@
+let operacion = document.getElementById('FunctionForm').value
 
-  let operacion = document.getElementById('FunctionForm').value
+let inputDisplay = document.getElementById('FunctionForm');
 
+let buttons = Array.from(document.getElementsByClassName('button'));
 
- let inputDisplay = document.getElementById('FunctionForm');
+function check(e) {
+  if (e == '√☐') {
+    return '√'
 
- let buttons = Array.from(document.getElementsByClassName('button'));
+    // } else if (  (e+'').includes('x^2') ) {
+    //   let value = inputDisplay.value;
+    //   let value2 = inputDisplay.value;
 
- function check(e) {
-   if (e == '√☐') {
-     return '√'
+    //   value = value.substr(-1);
+    //   value = parseInt(value);
 
-     // } else if (  (e+'').includes('x^2') ) {
-     //   let value = inputDisplay.value;
-     //   let value2 = inputDisplay.value;
+    //   // console.log(value2);
+    //   return value * value;
 
-     //   value = value.substr(-1);
-     //   value = parseInt(value);
+  } else {
+    return e;
+  }
+}
 
-     //   // console.log(value2);
-     //   return value * value;
+buttons.map(button => {
 
-   } else {
-     return e;
-   }
- }
+  button.addEventListener('click', e => {
 
+    switch (e.target.innerText) {
+      case 'x^2':
 
+        value = inputDisplay.value;
+        valueX = value;
 
+        // first, delete the last input to replace it for its elevation
 
- buttons.map(button => {
+        value = value.substring(0, value.length - 1);
+        inputDisplay.value = value;
 
-   button.addEventListener('click', e => {
+        inputDisplay.value = valueX + '**'
+        break;
 
-     switch (e.target.innerText) {
-       case 'x^2':
+      case 'C':
 
-         value = inputDisplay.value;
-         valueX = value;
+        inputDisplay.value = '';
+        document.getElementById('resultado').innerText = ''
+        break;
+      case '←':
+        value = inputDisplay.value;
+        value = value.substring(0, value.length - 1);
 
-         // first, delete the last input to replace it for its elevation
+        inputDisplay.value = value;
+        break;
+      default:
+        inputDisplay.value += check(e.target.innerText);
+    }
+  })
 
-         value = value.substring(0, value.length - 1);
-         inputDisplay.value = value;
-
-        //  // then do the process of elevation and so on
-        //  valueX = valueX.substr(-1);
-        //  valueX = parseInt(valueX);
-
-        //  inputDisplay.value += (valueX * valueX);
-
-        // @last Change: i remove the preview features to adapt it to python
-        inputDisplay.value = valueX+'**'
-         break;
-
-       case 'C':
-         
-
-         
-
-         inputDisplay.value = '';
-         document.getElementById('resultado').innerText = '' 
-         break;
-       case '←':
-         value = inputDisplay.value;
-         value = value.substring(0, value.length - 1);
-
-         inputDisplay.value = value;
-         break;
-       default:
-         inputDisplay.value += check(e.target.innerText);
-     }
-   })
-
- });
+});
