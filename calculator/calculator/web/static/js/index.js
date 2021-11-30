@@ -7,7 +7,6 @@ let buttons = Array.from(document.getElementsByClassName('button'));
 function check(e) {
   if (e == '√☐') {
     return '√'
-
     // } else if (  (e+'').includes('x^2') ) {
     //   let value = inputDisplay.value;
     //   let value2 = inputDisplay.value;

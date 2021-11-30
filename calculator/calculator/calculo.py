@@ -13,10 +13,14 @@ def bobito(fun):
         # f = fun.strip('"')
 
 
-        if f[0] != 'x':
+        if f[0] == 't' or  f[0] == 'c':
+            pass
+        elif f[0] != 'x':
             f = f.replace('x', '*x')
         else:
             pass            
+
+        
 
 
         for i in range(len(f)):
@@ -32,8 +36,6 @@ def bobito(fun):
             if "π" in f[i]:
                 f = f.replace('π', '*π')
                     
-        
-
         # f = 5*x
     
         print(f)
