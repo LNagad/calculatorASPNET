@@ -258,16 +258,16 @@ input:focus::-webkit-input-placeholder {
 
 /* ------------- div display styles */
 
-.display {
-  width: 50%;
-  height: 50%;
+.main-container .app .display {
+  width: 800px;
+  height: 100px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   
 }
 
-.display h2 {
+.main-container .app .display h2 {
   font-family: "Ubuntu", sans-serif;
   font-weight: bold;
   color: #3b3b3b;  
@@ -276,7 +276,7 @@ input:focus::-webkit-input-placeholder {
   
 }
 
-.display .resultado {
+.main-container .app .display .resultado {
   font-weight: 400;
   font-size: 20px;
   text-decoration: underline;

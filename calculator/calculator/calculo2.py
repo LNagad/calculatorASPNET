@@ -6,7 +6,7 @@ init_printing()
 x = symbols("x")
 e = symbols("e")
 pi = symbols("π")
-f = 5*x**2
+f = sec(x)*2
 
 
 # for i in range(len(f)):
@@ -14,6 +14,9 @@ f = 5*x**2
 
 
 pprint(Integral(f, x), use_unicode= True)
+lol = integrate(f,x)
+print('\n')
+pprint(Integral(lol, x), use_unicode= True)
 
     
 

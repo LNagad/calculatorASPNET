@@ -10,7 +10,7 @@ def index(request):
         data = ''
         const = ''
 
-    data = bobito(data)
+    data = integrar(data)
     
     # print(data)
     # print(type(data))
