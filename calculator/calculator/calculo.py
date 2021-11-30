@@ -37,10 +37,9 @@ def bobito(fun):
         # f = 5*x
     
         print(f)
-        print(f)
-        print(f)
-        print(f)
-        
+        value = integrate(f, x)
+        pprint(Integral(value, x), use_unicode= False)
+
         return integrate(f, x)
     except:
         return ''
